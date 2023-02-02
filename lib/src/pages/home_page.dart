@@ -1,4 +1,4 @@
-import 'package:clone_design_flutter/src/util/emoticons.dart';
+import 'package:clone_design_flutter/src/widgets/exercises.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/widgets.dart';
@@ -128,6 +128,44 @@ class HomePage extends StatelessWidget {
                         Icons.more_horiz,
                       )
                     ],
+                  ),
+                  const SizedBox(height: 20),
+                  //Exercises
+                  Expanded(
+                    child: ListView(
+                      children: const <Widget>[
+                        Exercises(
+                          icon: Icons.star,
+                          exerciseName: 'Speaking Skills',
+                          numberOfExercises: 22,
+                          color: Colors.orange,
+                        ),
+                        Exercises(
+                          icon: Icons.person,
+                          exerciseName: 'Writting Skills',
+                          numberOfExercises: 61,
+                          color: Colors.red,
+                        ),
+                        Exercises(
+                          icon: Icons.earbuds,
+                          exerciseName: 'Reading Skills',
+                          numberOfExercises: 19,
+                          color: Colors.yellow,
+                        ),
+                        Exercises(
+                          icon: Icons.create,
+                          exerciseName: 'Speaking',
+                          numberOfExercises: 21,
+                          color: Colors.green,
+                        ),
+                        Exercises(
+                          icon: Icons.star,
+                          exerciseName: 'Speaking',
+                          numberOfExercises: 2,
+                          color: Colors.brown,
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
